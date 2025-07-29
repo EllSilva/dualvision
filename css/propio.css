@@ -305,6 +305,7 @@ ul li::before {
   .brands-section {
     flex-direction: column;
     text-align: center;
+    padding: 5px 16px;
   }
 
   .brands-text {
