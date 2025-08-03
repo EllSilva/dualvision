@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nossa Equipe</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e0f7fa);
+      color: #1f2937;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #0f172a;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .subtitulo {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #64748b;
+      margin-bottom: 60px;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: #2563eb;
+      margin: 60px 0 30px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    h3::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 6px;
+      height: 24px;
+      background: #2563eb;
+      border-radius: 3px;
+    }
+
+    .grupo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+      width: 260px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      padding: 30px 20px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+      filter: brightness(0.9);
+    }
+
+    .card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+      color: #0f172a;
+    }
+
+    .cargo {
+      font-size: 0.95rem;
+      color: #3b82f6;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.92rem;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .cta button {
+      background: linear-gradient(to right, #2563eb, #3b82f6);
+      border: none;
+      padding: 14px 30px;
+      font-size: 1rem;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta button:hover {
+      background: linear-gradient(to right, #1d4ed8, #2563eb);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section>
+  <h2>Nossa Equipe</h2>
+  <p class="subtitulo">Profissionais dedicados que tornam nossa missão possível com excelência e paixão pelo que fazem.</p>
+
+  <!-- EQUIPE TÉCNICA -->
+  <h3>Equipe Técnica</h3>
+  <div class="grupo">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300.png?text=Engenheiro" alt="João Silva">
+      <h4>João Silva</h4>
+      <div class="cargo">Engenheiro Civil</div>
+      <p>Coordena obras e projetos com precisão técnica e visão estratégica.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300.png?text=Arquiteta" alt="Maria Santos">
+      <h4>Maria Santos</h4>
+      <div class="cargo">Arquiteta</div>
+      <p>Cria soluções criativas para espaços funcionais, modernos e sustentáveis.</p>
+    </div>
+  </div>
+
+  <!-- MOTORISTAS -->
+  <h3>Motoristas</h3>
+  <div class="grupo">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300.png?text=Motorista+1" alt="Carlos Alberto">
+      <h4>Carlos Alberto</h4>
+      <div class="cargo">Motorista Profissional</div>
+      <p>Responsável por conduções seguras, pontuais e atendimento cordial.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300.png?text=Motorista+2" alt="Paulo Gomes">
+      <h4>Paulo Gomes</h4>
+      <div class="cargo">Motorista Executivo</div>
+      <p>Focado no conforto e discrição, ideal para serviços de transporte premium.</p>
+    </div>
+  </div>
+
+  <!-- CHAMADA PARA AÇÃO -->
+  <div class="cta">
+    <button onclick="window.location.href='mailto:contato@suaempresa.com'">Fale com Nossa Equipe</button>
+  </div>
+</section>
+
+</body>
+</html>
